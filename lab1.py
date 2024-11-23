@@ -58,7 +58,7 @@ def relative_error(f, f_approx, n, interval, num_points=1000):
     errors = np.abs(f(x_values, n) - [f_approx(xi) for xi in x_values]) / np.abs(f(x_values, n))
     return np.mean(errors)
 def main():
-    n = 13  # Replace with your student number
+    n = 13 
     N = 200  # Order of approximation
     interval = (-np.pi, np.pi) if n % 2 == 0 else (0, np.pi)
     f = f_even if n % 2 == 0 else f_odd
